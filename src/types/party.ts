@@ -26,10 +26,9 @@ export interface Party {
   colour: string;
   position: number;
   isIndependent?: boolean;
-  // Vote count or vote share, which seats can be calculated from
-  votes?: number;
-  // Wins seats from votes even below the electoral threshold
-  isThresholdExempt?: boolean;
   // Supports the cabinet without joining it (gedoogsteun)
   isSupport?: boolean;
+  // From -100 (progressive) to 100 (conservative), next to `position` as the
+  // economic left to right. Left out for parties with only one position.
+  socialPosition?: number;
 }

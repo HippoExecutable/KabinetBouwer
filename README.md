@@ -91,14 +91,6 @@ Visualizations update instantly when party data changes.
 
 ---
 
-## Seats from Votes
-
-In edit mode, each party can be given a vote count or a vote share, and the seats are calculated from them with the **D'Hondt**, **Sainte-Laguë**, or **largest remainder** (Hare) method.
-
-Set the total number of seats, and the seats are split in proportion to the votes entered.
-
----
-
 ## Scenario Import / Export
 
 Parliament configurations can be saved and shared using **JSON import/export**, either as a `.json` file or as text copied to the clipboard.

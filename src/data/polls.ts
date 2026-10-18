@@ -23,52 +23,58 @@ import { Preset } from "@/types";
 export const polls: Preset[] = [
   {
     name: "Ipsos I&O",
-    updateDate: "2026-09-02",
-    description: "<b>Zetelpeiling</b> van Ipsos I&O van 2 september 2026.\ntest",
+    updateDate: "2026-10-14",
+    description:
+      "Zetelpeiling van Ipsos I&O van 14 oktober 2026, gepubliceerd op 16 oktober (n = 1.697).",
     parties: [
       {
         id: "nl-ipsos-pvv",
         name: "Partij voor de Vrijheid",
         shortName: "PVV",
-        seats: 17,
+        seats: 18,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       }, // Far-right
       {
         id: "nl-ipsos-vvd",
         name: "Volkspartij voor Vrijheid en Democratie",
         shortName: "VVD",
-        seats: 20,
+        seats: 15,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       }, // Centre-right
       {
         id: "nl-ipsos-pro",
         name: "Progressief Nederland",
         shortName: "PRO",
-        seats: 26,
+        seats: 28,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
         id: "nl-ipsos-d66",
         name: "Democraten 66",
         shortName: "D66",
-        seats: 20,
+        seats: 15,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
         id: "nl-ipsos-cda",
         name: "Christen-Democratisch Appèl",
         shortName: "CDA",
-        seats: 14,
+        seats: 13,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       }, // Centre
       {
@@ -77,34 +83,38 @@ export const polls: Preset[] = [
         shortName: "BBB",
         seats: 2,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       }, // Lean right
       {
         id: "nl-ipsos-volt",
         name: "Volt",
         shortName: "Volt",
-        seats: 2,
+        seats: 3,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
         id: "nl-ipsos-pvdd",
         name: "Partij voor de Dieren",
         shortName: "PvdD",
-        seats: 5,
+        seats: 6,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
         id: "nl-ipsos-cu",
         name: "ChristenUnie",
         shortName: "CU",
-        seats: 3,
+        seats: 5,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       }, // Centre
       {
@@ -113,16 +123,18 @@ export const polls: Preset[] = [
         shortName: "SGP",
         seats: 4,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
         id: "nl-ipsos-fvd",
         name: "Forum voor Democratie",
         shortName: "FvD",
-        seats: 12,
+        seats: 11,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -132,6 +144,7 @@ export const polls: Preset[] = [
         seats: 5,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       }, // Left-wing
       {
@@ -141,24 +154,27 @@ export const polls: Preset[] = [
         seats: 2,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       }, // Lean left
       {
         id: "nl-ipsos-ja21",
         name: "JA21",
         shortName: "JA21",
-        seats: 14,
+        seats: 18,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
         id: "nl-ipsos-50plus",
         name: "50PLUS",
         shortName: "50PLUS",
-        seats: 4,
+        seats: 5,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
     ],
@@ -173,7 +189,8 @@ export const polls: Preset[] = [
         shortName: "PVV",
         seats: 16,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       }, // Far-right
       {
@@ -182,7 +199,8 @@ export const polls: Preset[] = [
         shortName: "VVD",
         seats: 19,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       }, // Centre-right
       {
@@ -192,6 +210,7 @@ export const polls: Preset[] = [
         seats: 26,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -200,7 +219,8 @@ export const polls: Preset[] = [
         shortName: "D66",
         seats: 17,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -210,6 +230,7 @@ export const polls: Preset[] = [
         seats: 15,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       }, // Centre
       {
@@ -218,7 +239,8 @@ export const polls: Preset[] = [
         shortName: "BBB",
         seats: 2,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       }, // Lean right
       {
@@ -228,6 +250,7 @@ export const polls: Preset[] = [
         seats: 3,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -237,6 +260,7 @@ export const polls: Preset[] = [
         seats: 4,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -245,7 +269,8 @@ export const polls: Preset[] = [
         shortName: "CU",
         seats: 4,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       }, // Centre
       {
@@ -254,7 +279,8 @@ export const polls: Preset[] = [
         shortName: "SGP",
         seats: 4,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -263,7 +289,8 @@ export const polls: Preset[] = [
         shortName: "FvD",
         seats: 13,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -273,6 +300,7 @@ export const polls: Preset[] = [
         seats: 5,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       }, // Left-wing
       {
@@ -282,6 +310,7 @@ export const polls: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       }, // Lean left
       {
@@ -291,6 +320,7 @@ export const polls: Preset[] = [
         seats: 14,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -299,7 +329,8 @@ export const polls: Preset[] = [
         shortName: "50PLUS",
         seats: 5,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
     ],
@@ -314,7 +345,8 @@ export const polls: Preset[] = [
         shortName: "PVV",
         seats: 18,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       }, // Far-right
       {
@@ -323,7 +355,8 @@ export const polls: Preset[] = [
         shortName: "VVD",
         seats: 16,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       }, // Centre-right
       {
@@ -333,6 +366,7 @@ export const polls: Preset[] = [
         seats: 26,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -341,7 +375,8 @@ export const polls: Preset[] = [
         shortName: "D66",
         seats: 18,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -351,6 +386,7 @@ export const polls: Preset[] = [
         seats: 13,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       }, // Centre
       {
@@ -359,7 +395,8 @@ export const polls: Preset[] = [
         shortName: "BBB",
         seats: 1,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       }, // Lean right
       {
@@ -369,6 +406,7 @@ export const polls: Preset[] = [
         seats: 3,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -378,6 +416,7 @@ export const polls: Preset[] = [
         seats: 4,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -386,7 +425,8 @@ export const polls: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       }, // Centre
       {
@@ -395,7 +435,8 @@ export const polls: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -404,7 +445,8 @@ export const polls: Preset[] = [
         shortName: "FvD",
         seats: 17,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -414,6 +456,7 @@ export const polls: Preset[] = [
         seats: 4,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       }, // Left-wing
       {
@@ -423,6 +466,7 @@ export const polls: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       }, // Lean left
       {
@@ -432,6 +476,7 @@ export const polls: Preset[] = [
         seats: 17,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -440,7 +485,8 @@ export const polls: Preset[] = [
         shortName: "50PLUS",
         seats: 4,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
     ],

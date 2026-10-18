@@ -38,7 +38,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 26,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -47,7 +48,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 26,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -56,7 +58,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 22,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -66,6 +69,7 @@ export const pastElections: Preset[] = [
         seats: 20,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -75,6 +79,7 @@ export const pastElections: Preset[] = [
         seats: 18,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -84,6 +89,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -92,7 +98,8 @@ export const pastElections: Preset[] = [
         shortName: "FvD",
         seats: 7,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -101,7 +108,8 @@ export const pastElections: Preset[] = [
         shortName: "BBB",
         seats: 4,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -111,6 +119,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -119,7 +128,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -129,6 +139,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -137,7 +148,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -147,6 +159,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -155,7 +168,8 @@ export const pastElections: Preset[] = [
         shortName: "50PLUS",
         seats: 2,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -165,6 +179,7 @@ export const pastElections: Preset[] = [
         seats: 1,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       },
     ],
@@ -182,7 +197,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 37,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -192,6 +208,7 @@ export const pastElections: Preset[] = [
         seats: 25,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -200,7 +217,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 24,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -209,7 +227,8 @@ export const pastElections: Preset[] = [
         shortName: "NSC",
         seats: 20,
         colour: "#1B3A57",
-        position: 25,
+        position: 0,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -218,7 +237,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 9,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -227,7 +247,8 @@ export const pastElections: Preset[] = [
         shortName: "BBB",
         seats: 7,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -237,6 +258,7 @@ export const pastElections: Preset[] = [
         seats: 5,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -246,6 +268,7 @@ export const pastElections: Preset[] = [
         seats: 5,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -255,6 +278,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -264,6 +288,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -272,7 +297,8 @@ export const pastElections: Preset[] = [
         shortName: "FvD",
         seats: 3,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -281,7 +307,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -290,7 +317,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -300,6 +328,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -309,6 +338,7 @@ export const pastElections: Preset[] = [
         seats: 1,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
     ],
@@ -326,7 +356,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 34,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -335,7 +366,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 24,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -344,7 +376,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 17,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -354,6 +387,7 @@ export const pastElections: Preset[] = [
         seats: 15,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -363,6 +397,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -372,6 +407,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -380,7 +416,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 8,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -389,7 +426,8 @@ export const pastElections: Preset[] = [
         shortName: "FvD",
         seats: 8,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -399,6 +437,7 @@ export const pastElections: Preset[] = [
         seats: 6,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -407,7 +446,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 5,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -416,7 +456,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -426,6 +467,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -435,6 +477,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -444,6 +487,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -452,7 +496,8 @@ export const pastElections: Preset[] = [
         shortName: "BBB",
         seats: 1,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -461,7 +506,8 @@ export const pastElections: Preset[] = [
         shortName: "50PLUS",
         seats: 1,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -471,6 +517,7 @@ export const pastElections: Preset[] = [
         seats: 1,
         colour: "#E5B800",
         position: -100,
+        socialPosition: -100,
         isIndependent: false,
       },
     ],
@@ -486,7 +533,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 33,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -495,7 +543,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 20,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -505,6 +554,7 @@ export const pastElections: Preset[] = [
         seats: 19,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -513,7 +563,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 19,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -522,7 +573,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 14,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -532,6 +584,7 @@ export const pastElections: Preset[] = [
         seats: 14,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -541,6 +594,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -549,7 +603,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 5,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -559,6 +614,7 @@ export const pastElections: Preset[] = [
         seats: 5,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -567,7 +623,8 @@ export const pastElections: Preset[] = [
         shortName: "50PLUS",
         seats: 4,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -576,7 +633,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -586,6 +644,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -594,7 +653,8 @@ export const pastElections: Preset[] = [
         shortName: "FvD",
         seats: 2,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -610,7 +670,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 41,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -620,6 +681,7 @@ export const pastElections: Preset[] = [
         seats: 38,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -628,7 +690,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 15,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -638,6 +701,7 @@ export const pastElections: Preset[] = [
         seats: 15,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -647,6 +711,7 @@ export const pastElections: Preset[] = [
         seats: 13,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -655,7 +720,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 12,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -664,7 +730,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 5,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -673,7 +740,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 4,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -682,7 +750,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -692,6 +761,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -700,7 +770,8 @@ export const pastElections: Preset[] = [
         shortName: "50PLUS",
         seats: 2,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
     ],
@@ -718,7 +789,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 31,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -728,6 +800,7 @@ export const pastElections: Preset[] = [
         seats: 30,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -736,7 +809,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 24,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
         // Gedoogsteun for Rutte I, without joining the cabinet
         isSupport: true,
@@ -748,6 +822,7 @@ export const pastElections: Preset[] = [
         seats: 21,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -757,6 +832,7 @@ export const pastElections: Preset[] = [
         seats: 15,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -765,7 +841,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 10,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -774,7 +851,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 10,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -783,7 +861,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 5,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -793,6 +872,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -801,7 +881,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -820,6 +901,7 @@ export const pastElections: Preset[] = [
         seats: 41,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -829,6 +911,7 @@ export const pastElections: Preset[] = [
         seats: 33,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -838,6 +921,7 @@ export const pastElections: Preset[] = [
         seats: 25,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -846,7 +930,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 22,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -855,7 +940,8 @@ export const pastElections: Preset[] = [
         shortName: "PVV",
         seats: 9,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -864,7 +950,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 7,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -873,7 +960,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 6,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -882,7 +970,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 3,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -892,6 +981,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -900,7 +990,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -917,6 +1008,7 @@ export const pastElections: Preset[] = [
         seats: 44,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -926,6 +1018,7 @@ export const pastElections: Preset[] = [
         seats: 42,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -934,7 +1027,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 28,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -944,6 +1038,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -953,6 +1048,7 @@ export const pastElections: Preset[] = [
         seats: 8,
         colour: "#00B2EE",
         position: 50,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -961,7 +1057,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 8,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -970,7 +1067,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 6,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -979,7 +1077,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -988,7 +1087,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1005,6 +1105,7 @@ export const pastElections: Preset[] = [
         seats: 43,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1014,6 +1115,7 @@ export const pastElections: Preset[] = [
         seats: 26,
         colour: "#00B2EE",
         position: 50,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1022,7 +1124,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 24,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1032,6 +1135,7 @@ export const pastElections: Preset[] = [
         seats: 23,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1040,7 +1144,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 10,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -1050,6 +1155,7 @@ export const pastElections: Preset[] = [
         seats: 9,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1058,7 +1164,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 7,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1067,7 +1174,8 @@ export const pastElections: Preset[] = [
         shortName: "CU",
         seats: 4,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1076,7 +1184,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1086,6 +1195,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#6A5ACD",
         position: 25,
+        socialPosition: 25,
         isIndependent: false,
       },
     ],
@@ -1102,6 +1212,7 @@ export const pastElections: Preset[] = [
         seats: 45,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1110,7 +1221,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 38,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1120,6 +1232,7 @@ export const pastElections: Preset[] = [
         seats: 29,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1128,7 +1241,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 14,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1137,7 +1251,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 11,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -1147,6 +1262,7 @@ export const pastElections: Preset[] = [
         seats: 5,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1155,7 +1271,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1164,7 +1281,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 3,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1173,7 +1291,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 2,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1192,6 +1311,7 @@ export const pastElections: Preset[] = [
         seats: 37,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1201,6 +1321,7 @@ export const pastElections: Preset[] = [
         seats: 34,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1209,7 +1330,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 31,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1218,7 +1340,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 24,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1227,7 +1350,8 @@ export const pastElections: Preset[] = [
         shortName: "AOV",
         seats: 6,
         colour: "#F7B500",
-        position: 0,
+        position: -25,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1236,7 +1360,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 5,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -1245,7 +1370,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 3,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1254,7 +1380,8 @@ export const pastElections: Preset[] = [
         shortName: "CD",
         seats: 3,
         colour: "#5C4033",
-        position: 100,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1263,7 +1390,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1272,7 +1400,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 2,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1282,6 +1411,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1290,7 +1420,8 @@ export const pastElections: Preset[] = [
         shortName: "Unie 55+",
         seats: 1,
         colour: "#CCCC66",
-        position: 0,
+        position: -25,
+        socialPosition: 25,
         isIndependent: false,
       },
     ],
@@ -1307,6 +1438,7 @@ export const pastElections: Preset[] = [
         seats: 54,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1316,6 +1448,7 @@ export const pastElections: Preset[] = [
         seats: 49,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1324,7 +1457,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 22,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1333,7 +1467,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 12,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1342,7 +1477,8 @@ export const pastElections: Preset[] = [
         shortName: "GL",
         seats: 6,
         colour: "#39A935",
-        position: -60,
+        position: -75,
+        socialPosition: -100,
         isIndependent: false,
       },
       {
@@ -1351,7 +1487,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1360,7 +1497,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 2,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1369,7 +1507,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 1,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1378,7 +1517,8 @@ export const pastElections: Preset[] = [
         shortName: "CD",
         seats: 1,
         colour: "#5C4033",
-        position: 100,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1395,6 +1535,7 @@ export const pastElections: Preset[] = [
         seats: 54,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1404,6 +1545,7 @@ export const pastElections: Preset[] = [
         seats: 52,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1412,7 +1554,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 27,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1421,7 +1564,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 9,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1430,7 +1574,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1439,7 +1584,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 2,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1448,7 +1594,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1457,7 +1604,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 1,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1466,7 +1614,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 1,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
     ],
@@ -1483,6 +1632,7 @@ export const pastElections: Preset[] = [
         seats: 45,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1492,6 +1642,7 @@ export const pastElections: Preset[] = [
         seats: 47,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1500,7 +1651,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 36,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1509,7 +1661,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 6,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1519,6 +1672,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1527,7 +1681,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 3,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1536,7 +1691,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 2,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1545,7 +1701,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 2,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1554,7 +1711,8 @@ export const pastElections: Preset[] = [
         shortName: "EVP",
         seats: 1,
         colour: "#C7DA5A",
-        position: -25,
+        position: -50,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -1563,7 +1721,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1572,7 +1731,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1581,7 +1741,8 @@ export const pastElections: Preset[] = [
         shortName: "CP",
         seats: 1,
         colour: "#4B2E1E",
-        position: 100,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1600,6 +1761,7 @@ export const pastElections: Preset[] = [
         seats: 48,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1609,6 +1771,7 @@ export const pastElections: Preset[] = [
         seats: 44,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1617,7 +1780,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 26,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1626,7 +1790,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 17,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1636,6 +1801,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1644,7 +1810,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 3,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1653,7 +1820,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 3,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1662,7 +1830,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1671,7 +1840,8 @@ export const pastElections: Preset[] = [
         shortName: "RPF",
         seats: 2,
         colour: "#F5B041",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1680,7 +1850,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1699,6 +1870,7 @@ export const pastElections: Preset[] = [
         seats: 53,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1708,6 +1880,7 @@ export const pastElections: Preset[] = [
         seats: 49,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1716,7 +1889,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 28,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1725,7 +1899,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 8,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1734,7 +1909,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 3,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1743,7 +1919,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1753,6 +1930,7 @@ export const pastElections: Preset[] = [
         seats: 2,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1761,7 +1939,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1770,7 +1949,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 1,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1779,7 +1959,8 @@ export const pastElections: Preset[] = [
         shortName: "BP",
         seats: 1,
         colour: "#7A8B2E",
-        position: 75,
+        position: 50,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1789,6 +1970,7 @@ export const pastElections: Preset[] = [
         seats: 1,
         colour: "#C9A227",
         position: 0,
+        socialPosition: 0,
         isIndependent: false,
       },
     ],
@@ -1813,6 +1995,7 @@ export const pastElections: Preset[] = [
         seats: 43,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1822,6 +2005,7 @@ export const pastElections: Preset[] = [
         seats: 27,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1830,7 +2014,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 22,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1840,6 +2025,7 @@ export const pastElections: Preset[] = [
         seats: 14,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1848,7 +2034,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 7,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1857,7 +2044,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 7,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1867,6 +2055,7 @@ export const pastElections: Preset[] = [
         seats: 7,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -1875,7 +2064,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 6,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1885,6 +2075,7 @@ export const pastElections: Preset[] = [
         seats: 6,
         colour: "#C9A227",
         position: 0,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -1893,7 +2084,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1902,7 +2094,8 @@ export const pastElections: Preset[] = [
         shortName: "BP",
         seats: 3,
         colour: "#7A8B2E",
-        position: 75,
+        position: 50,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1911,7 +2104,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 2,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -1920,7 +2114,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 2,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1929,7 +2124,8 @@ export const pastElections: Preset[] = [
         shortName: "RKPN",
         seats: 1,
         colour: "#A0522D",
-        position: 40,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -1953,6 +2149,7 @@ export const pastElections: Preset[] = [
         seats: 39,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -1962,6 +2159,7 @@ export const pastElections: Preset[] = [
         seats: 35,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -1970,7 +2168,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 16,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -1980,6 +2179,7 @@ export const pastElections: Preset[] = [
         seats: 13,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -1988,7 +2188,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 11,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -1997,7 +2198,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 10,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2007,6 +2209,7 @@ export const pastElections: Preset[] = [
         seats: 8,
         colour: "#C9A227",
         position: 0,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -2016,6 +2219,7 @@ export const pastElections: Preset[] = [
         seats: 6,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2024,7 +2228,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2033,7 +2238,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 2,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2042,7 +2248,8 @@ export const pastElections: Preset[] = [
         shortName: "NMP",
         seats: 2,
         colour: "#A8A29E",
-        position: 25,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2051,7 +2258,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 2,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -2060,7 +2268,8 @@ export const pastElections: Preset[] = [
         shortName: "PPR",
         seats: 2,
         colour: "#7DB46C",
-        position: -75,
+        position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -2069,7 +2278,8 @@ export const pastElections: Preset[] = [
         shortName: "BP",
         seats: 1,
         colour: "#7A8B2E",
-        position: 75,
+        position: 50,
+        socialPosition: 75,
         isIndependent: false,
       },
     ],
@@ -2086,6 +2296,7 @@ export const pastElections: Preset[] = [
         seats: 42,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2095,6 +2306,7 @@ export const pastElections: Preset[] = [
         seats: 37,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2103,7 +2315,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 17,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2113,6 +2326,7 @@ export const pastElections: Preset[] = [
         seats: 15,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2121,7 +2335,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 12,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2130,7 +2345,8 @@ export const pastElections: Preset[] = [
         shortName: "BP",
         seats: 7,
         colour: "#7A8B2E",
-        position: 75,
+        position: 50,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2139,7 +2355,8 @@ export const pastElections: Preset[] = [
         shortName: "D66",
         seats: 7,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -2149,6 +2366,7 @@ export const pastElections: Preset[] = [
         seats: 5,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2157,7 +2375,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 4,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -2166,7 +2385,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2175,7 +2395,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -2194,6 +2415,7 @@ export const pastElections: Preset[] = [
         seats: 50,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2203,6 +2425,7 @@ export const pastElections: Preset[] = [
         seats: 43,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2211,7 +2434,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 16,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2221,6 +2445,7 @@ export const pastElections: Preset[] = [
         seats: 13,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2229,7 +2454,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 13,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2239,6 +2465,7 @@ export const pastElections: Preset[] = [
         seats: 4,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2247,7 +2474,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 4,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -2256,7 +2484,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2265,7 +2494,8 @@ export const pastElections: Preset[] = [
         shortName: "BP",
         seats: 3,
         colour: "#7A8B2E",
-        position: 75,
+        position: 50,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2274,7 +2504,8 @@ export const pastElections: Preset[] = [
         shortName: "GPV",
         seats: 1,
         colour: "#F29B4B",
-        position: 60,
+        position: 25,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -2292,6 +2523,7 @@ export const pastElections: Preset[] = [
         seats: 49,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2301,6 +2533,7 @@ export const pastElections: Preset[] = [
         seats: 48,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2309,7 +2542,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 19,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2319,6 +2553,7 @@ export const pastElections: Preset[] = [
         seats: 14,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2327,7 +2562,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 12,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2336,7 +2572,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2346,6 +2583,7 @@ export const pastElections: Preset[] = [
         seats: 3,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2354,7 +2592,8 @@ export const pastElections: Preset[] = [
         shortName: "PSP",
         seats: 2,
         colour: "#E4572E",
-        position: -90,
+        position: -100,
+        socialPosition: -75,
         isIndependent: false,
       },
     ],
@@ -2373,6 +2612,7 @@ export const pastElections: Preset[] = [
         seats: 50,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2382,6 +2622,7 @@ export const pastElections: Preset[] = [
         seats: 49,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2391,6 +2632,7 @@ export const pastElections: Preset[] = [
         seats: 15,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2399,7 +2641,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 13,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2408,7 +2651,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 13,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2418,6 +2662,7 @@ export const pastElections: Preset[] = [
         seats: 7,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2426,7 +2671,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],
@@ -2445,6 +2691,7 @@ export const pastElections: Preset[] = [
         seats: 30,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2454,6 +2701,7 @@ export const pastElections: Preset[] = [
         seats: 30,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2463,6 +2711,7 @@ export const pastElections: Preset[] = [
         seats: 12,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2471,7 +2720,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 9,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2480,7 +2730,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 9,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2490,6 +2741,7 @@ export const pastElections: Preset[] = [
         seats: 6,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2498,7 +2750,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2507,7 +2760,8 @@ export const pastElections: Preset[] = [
         shortName: "KNP",
         seats: 2,
         colour: "#8B5E3C",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
     ],
@@ -2526,6 +2780,7 @@ export const pastElections: Preset[] = [
         seats: 32,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2535,6 +2790,7 @@ export const pastElections: Preset[] = [
         seats: 27,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2544,6 +2800,7 @@ export const pastElections: Preset[] = [
         seats: 13,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2552,7 +2809,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 9,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2561,7 +2819,8 @@ export const pastElections: Preset[] = [
         shortName: "VVD",
         seats: 8,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2571,6 +2830,7 @@ export const pastElections: Preset[] = [
         seats: 8,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2579,7 +2839,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -2588,7 +2849,8 @@ export const pastElections: Preset[] = [
         shortName: "KNP",
         seats: 1,
         colour: "#8B5E3C",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
     ],
@@ -2607,6 +2869,7 @@ export const pastElections: Preset[] = [
         seats: 32,
         colour: "#E07B00",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -2616,6 +2879,7 @@ export const pastElections: Preset[] = [
         seats: 29,
         colour: "#E2001A",
         position: -50,
+        socialPosition: -50,
         isIndependent: false,
       },
       {
@@ -2625,6 +2889,7 @@ export const pastElections: Preset[] = [
         seats: 13,
         colour: "#3B6FB6",
         position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2634,6 +2899,7 @@ export const pastElections: Preset[] = [
         seats: 10,
         colour: "#8B0000",
         position: -100,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -2642,7 +2908,8 @@ export const pastElections: Preset[] = [
         shortName: "CHU",
         seats: 8,
         colour: "#6C8EBF",
-        position: 40,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -2651,7 +2918,8 @@ export const pastElections: Preset[] = [
         shortName: "PvdV",
         seats: 6,
         colour: "#5B7FE0",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -2660,7 +2928,8 @@ export const pastElections: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],

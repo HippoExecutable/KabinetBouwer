@@ -33,7 +33,8 @@ export const currentRooms: Preset[] = [
         shortName: "PVV",
         seats: 19,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       }, // Far-right
       {
@@ -42,7 +43,8 @@ export const currentRooms: Preset[] = [
         shortName: "VVD",
         seats: 22,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       }, // Centre-right
       {
@@ -52,6 +54,7 @@ export const currentRooms: Preset[] = [
         seats: 20,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -60,7 +63,8 @@ export const currentRooms: Preset[] = [
         shortName: "D66",
         seats: 26,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -70,6 +74,7 @@ export const currentRooms: Preset[] = [
         seats: 18,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       }, // Centre
       {
@@ -78,7 +83,8 @@ export const currentRooms: Preset[] = [
         shortName: "BBB",
         seats: 3,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       }, // Lean right
       {
@@ -88,6 +94,7 @@ export const currentRooms: Preset[] = [
         seats: 1,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       }, // Lean left
       {
@@ -97,6 +104,7 @@ export const currentRooms: Preset[] = [
         seats: 3,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       }, // Centre-left
       {
@@ -105,7 +113,8 @@ export const currentRooms: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       }, // Centre
       {
@@ -114,7 +123,8 @@ export const currentRooms: Preset[] = [
         shortName: "SGP",
         seats: 3,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -123,7 +133,8 @@ export const currentRooms: Preset[] = [
         shortName: "FvD",
         seats: 7,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       }, // Right-wing
       {
@@ -133,6 +144,7 @@ export const currentRooms: Preset[] = [
         seats: 3,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       }, // Left-wing
       {
@@ -142,6 +154,7 @@ export const currentRooms: Preset[] = [
         seats: 3,
         colour: "#00B7B2",
         position: -50,
+        socialPosition: 25,
         isIndependent: false,
       }, // Lean left
       {
@@ -151,6 +164,7 @@ export const currentRooms: Preset[] = [
         seats: 9,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -159,7 +173,8 @@ export const currentRooms: Preset[] = [
         shortName: "50PLUS",
         seats: 2,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -168,7 +183,8 @@ export const currentRooms: Preset[] = [
         shortName: "DNA",
         seats: 7,
         colour: "#354050",
-        position: 0,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -177,7 +193,8 @@ export const currentRooms: Preset[] = [
         shortName: "MK",
         seats: 1,
         colour: "#354050",
-        position: 0,
+        position: 75,
+        socialPosition: 50,
         isIndependent: true,
       },
     ],
@@ -195,6 +212,7 @@ export const currentRooms: Preset[] = [
         seats: 14,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -203,7 +221,8 @@ export const currentRooms: Preset[] = [
         shortName: "BBB",
         seats: 11,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -212,7 +231,8 @@ export const currentRooms: Preset[] = [
         shortName: "VVD",
         seats: 9,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -221,7 +241,8 @@ export const currentRooms: Preset[] = [
         shortName: "D66",
         seats: 7,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -231,6 +252,7 @@ export const currentRooms: Preset[] = [
         seats: 6,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -239,7 +261,8 @@ export const currentRooms: Preset[] = [
         shortName: "PVV",
         seats: 4,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -249,6 +272,7 @@ export const currentRooms: Preset[] = [
         seats: 3,
         colour: "#F60000",
         position: -75,
+        socialPosition: -25,
         isIndependent: false,
       },
       {
@@ -257,7 +281,8 @@ export const currentRooms: Preset[] = [
         shortName: "CU",
         seats: 3,
         colour: "#00A7EE",
-        position: 25,
+        position: 0,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -266,7 +291,8 @@ export const currentRooms: Preset[] = [
         shortName: "FvD",
         seats: 3,
         colour: "#841818",
-        position: 100,
+        position: 75,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -276,6 +302,7 @@ export const currentRooms: Preset[] = [
         seats: 2,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -285,6 +312,7 @@ export const currentRooms: Preset[] = [
         seats: 2,
         colour: "#242B57",
         position: 75,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -294,6 +322,7 @@ export const currentRooms: Preset[] = [
         seats: 2,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -302,7 +331,8 @@ export const currentRooms: Preset[] = [
         shortName: "SGP",
         seats: 2,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
       {
@@ -311,7 +341,8 @@ export const currentRooms: Preset[] = [
         shortName: "50PLUS",
         seats: 1,
         colour: "#92107D",
-        position: 0,
+        position: -25,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -321,6 +352,7 @@ export const currentRooms: Preset[] = [
         seats: 1,
         colour: "#F7A600",
         position: 0,
+        socialPosition: 0,
         isIndependent: false,
       },
       {
@@ -329,7 +361,8 @@ export const currentRooms: Preset[] = [
         shortName: "Visseren-Hamakers",
         seats: 1,
         colour: "#71717A",
-        position: 0,
+        position: -75,
+        socialPosition: -75,
         isIndependent: true,
       },
       {
@@ -339,6 +372,7 @@ export const currentRooms: Preset[] = [
         seats: 1,
         colour: "#71717A",
         position: 0,
+        socialPosition: 0,
         isIndependent: true,
       },
       {
@@ -348,6 +382,7 @@ export const currentRooms: Preset[] = [
         seats: 1,
         colour: "#71717A",
         position: 0,
+        socialPosition: 0,
         isIndependent: true,
       },
       {
@@ -356,7 +391,8 @@ export const currentRooms: Preset[] = [
         shortName: "Van de Sanden",
         seats: 1,
         colour: "#71717A",
-        position: 0,
+        position: 75,
+        socialPosition: 25,
         isIndependent: true,
       },
       {
@@ -365,7 +401,8 @@ export const currentRooms: Preset[] = [
         shortName: "Van Gasteren",
         seats: 1,
         colour: "#71717A",
-        position: 0,
+        position: 75,
+        socialPosition: 50,
         isIndependent: true,
       },
     ],
@@ -383,6 +420,7 @@ export const currentRooms: Preset[] = [
         seats: 8,
         colour: "#ff0000",
         position: -50,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -391,7 +429,8 @@ export const currentRooms: Preset[] = [
         shortName: "PVV",
         seats: 6,
         colour: "#012758",
-        position: 100,
+        position: 25,
+        socialPosition: 75,
         isIndependent: false,
       },
       {
@@ -400,7 +439,8 @@ export const currentRooms: Preset[] = [
         shortName: "VVD",
         seats: 4,
         colour: "#0A2CCA",
-        position: 50,
+        position: 75,
+        socialPosition: 25,
         isIndependent: false,
       },
       {
@@ -409,7 +449,8 @@ export const currentRooms: Preset[] = [
         shortName: "D66",
         seats: 3,
         colour: "#00AE41",
-        position: -25,
+        position: 0,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -419,6 +460,7 @@ export const currentRooms: Preset[] = [
         seats: 3,
         colour: "#2CC84D",
         position: 25,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -427,7 +469,8 @@ export const currentRooms: Preset[] = [
         shortName: "BBB",
         seats: 2,
         colour: "#94C11F",
-        position: 50,
+        position: 75,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -437,6 +480,7 @@ export const currentRooms: Preset[] = [
         seats: 2,
         colour: "#582c83",
         position: -25,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -446,6 +490,7 @@ export const currentRooms: Preset[] = [
         seats: 1,
         colour: "#006B2D",
         position: -75,
+        socialPosition: -75,
         isIndependent: false,
       },
       {
@@ -454,7 +499,8 @@ export const currentRooms: Preset[] = [
         shortName: "NSC",
         seats: 1,
         colour: "#1B3A57",
-        position: 25,
+        position: 0,
+        socialPosition: 50,
         isIndependent: false,
       },
       {
@@ -463,7 +509,8 @@ export const currentRooms: Preset[] = [
         shortName: "SGP",
         seats: 1,
         colour: "#EA5B0B",
-        position: 75,
+        position: 50,
+        socialPosition: 100,
         isIndependent: false,
       },
     ],

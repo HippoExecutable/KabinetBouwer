@@ -36,13 +36,14 @@ import SeatChange from "./SeatChange";
 import { supportStripes } from "@/components/colors";
 
 import { Party } from "@/types";
-import { getPosition } from "@/utils/getPosition";
+import { getPosition, getSocialPosition } from "@/utils/getPosition";
 import {
   PlusCircleIcon,
   MinusCircleIcon,
   TrashIcon,
   QuestionMarkCircleIcon,
   HandRaisedIcon,
+  PlusIcon,
 } from "@heroicons/react/24/outline";
 import { HandRaisedIcon as HandRaisedSolidIcon } from "@heroicons/react/24/solid";
 
@@ -71,6 +72,17 @@ export default function PartyButton({ party }: { party: Party }) {
     !isEditMode && isPoll(selectedPreset?.name)
       ? party.seats - (getCurrentSeats(getPartyKey(party.id)).tweedeKamer ?? 0)
       : 0;
+  // With a social place, the position is the economic one
+  const hasSocial = party.socialPosition !== undefined;
+  function update(changes: Partial<Party>) {
+    const newParty = { ...party, ...changes };
+    setParties(parties.map((p) => (p.id === party.id ? newParty : p)));
+    if (selected) {
+      setSelectedParties(
+        selectedParties.map((p) => (p.id === party.id ? newParty : p)),
+      );
+    }
+  }
   const PartyCard = isEditMode ? "div" : "button";
   return (
     <div className="relative">
@@ -132,7 +144,7 @@ export default function PartyButton({ party }: { party: Party }) {
           <div
             className={`transition-all ${
               isEditMode
-                ? "h-6 w-full rounded-full border-zinc-200 dark:border-zinc-700"
+                ? "h-4 w-full rounded-full border-zinc-200 dark:border-zinc-700"
                 : "aspect-square size-4 rounded-full"
             }`}
             style={{
@@ -171,58 +183,17 @@ export default function PartyButton({ party }: { party: Party }) {
           )}
         </span>
 
-        {isEditMode && (
-          <span className={isEditMode ? "w-full" : "truncate"}>
-            <input
-              name="partyShortName"
-              type="text"
-              placeholder="Party Short Name"
-              className="w-full border-b border-zinc-200 bg-transparent outline-hidden dark:border-zinc-700"
-              value={party.shortName}
-              onChange={(e) => {
-                const newParty = { ...party, shortName: e.target.value };
-                setParties(
-                  parties.map((p) => (p.id === party.id ? newParty : p)),
-                );
-                if (selected) {
-                  setSelectedParties(
-                    selectedParties.map((p) =>
-                      p.id === party.id ? newParty : p,
-                    ),
-                  );
-                }
-              }}
-            />
-          </span>
-        )}
-
-        <span
-          className={`font-semibold ${isEditMode ? "w-full" : "text-nowrap"}`}
-        >
-          {isEditMode ? (
-            <input
-              name="seats"
-              type="number"
-              placeholder="Seats"
-              className="w-full border-b border-zinc-200 bg-transparent outline-hidden dark:border-zinc-700"
-              min={0}
-              max={99999}
-              value={party.seats.toFixed(0)}
-              onChange={(e) => {
-                const newParty = { ...party, seats: parseInt(e.target.value) };
-                setParties(
-                  parties.map((p) => (p.id === party.id ? newParty : p)),
-                );
-                if (selected) {
-                  setSelectedParties(
-                    selectedParties.map((p) =>
-                      p.id === party.id ? newParty : p,
-                    ),
-                  );
-                }
-
-                if (e.target.value.length <= 0) {
-                  const newParty = { ...party, seats: 0 };
+        {isEditMode ? (
+          <div className="flex w-full gap-2">
+            <span className="w-1/2 min-w-0">
+              <input
+                name="partyShortName"
+                type="text"
+                placeholder="Short Name"
+                className="w-full border-b border-zinc-200 bg-transparent outline-hidden dark:border-zinc-700"
+                value={party.shortName}
+                onChange={(e) => {
+                  const newParty = { ...party, shortName: e.target.value };
                   setParties(
                     parties.map((p) => (p.id === party.id ? newParty : p)),
                   );
@@ -233,55 +204,78 @@ export default function PartyButton({ party }: { party: Party }) {
                       ),
                     );
                   }
-                }
-              }}
-            />
-          ) : (
-            party.seats
-          )}
-        </span>
+                }}
+              />
+            </span>
+            <span className="w-1/2 min-w-0 font-semibold">
+              <input
+                name="seats"
+                type="number"
+                placeholder="Seats"
+                className="w-full border-b border-zinc-200 bg-transparent outline-hidden dark:border-zinc-700"
+                min={0}
+                max={99999}
+                value={party.seats.toFixed(0)}
+                onChange={(e) => {
+                  const newParty = {
+                    ...party,
+                    seats: parseInt(e.target.value),
+                  };
+                  setParties(
+                    parties.map((p) => (p.id === party.id ? newParty : p)),
+                  );
+                  if (selected) {
+                    setSelectedParties(
+                      selectedParties.map((p) =>
+                        p.id === party.id ? newParty : p,
+                      ),
+                    );
+                  }
+
+                  if (e.target.value.length <= 0) {
+                    const newParty = { ...party, seats: 0 };
+                    setParties(
+                      parties.map((p) => (p.id === party.id ? newParty : p)),
+                    );
+                    if (selected) {
+                      setSelectedParties(
+                        selectedParties.map((p) =>
+                          p.id === party.id ? newParty : p,
+                        ),
+                      );
+                    }
+                  }
+                }}
+              />
+            </span>
+          </div>
+        ) : (
+          <span className="font-semibold text-nowrap">{party.seats}</span>
+        )}
         <SeatChange
           change={change}
           title={i("body.changeFromNow")}
           className="-ms-1"
         />
-        {isEditMode && (
-          <label className="flex w-full items-center gap-2">
-            <input
-              name="votes"
-              type="number"
-              inputMode="decimal"
-              className="w-full min-w-0 border-b border-zinc-200 bg-transparent outline-hidden dark:border-zinc-700"
-              min={0}
-              step="any"
-              value={party.votes ?? ""}
-              onChange={(e) => {
-                const votes = parseFloat(e.target.value);
-                const newParty = {
-                  ...party,
-                  votes: votes >= 0 ? votes : undefined,
-                };
-                setParties(
-                  parties.map((p) => (p.id === party.id ? newParty : p)),
-                );
-                if (selected) {
-                  setSelectedParties(
-                    selectedParties.map((p) =>
-                      p.id === party.id ? newParty : p,
-                    ),
-                  );
-                }
-              }}
-            />
-            <span className="shrink-0 text-sm opacity-75">
-              {i("allocation.votes")}
-            </span>
-          </label>
-        )}
         {isEditMode ? (
           <>
             <div className="flex w-full">
               <label className="flex w-full flex-col items-center gap-1">
+                <span className="self-start text-xs">
+                  <span className="opacity-75">
+                    {hasSocial
+                      ? i("controls.economicAxis")
+                      : i("body.position")}
+                    :{" "}
+                  </span>
+                  <span className="font-semibold">
+                    {i(
+                      `${hasSocial ? "economicSpectrum" : "spectrum"}.${
+                        getPosition(party.position).full
+                      }`,
+                    )}
+                  </span>
+                </span>
                 <input
                   name="position"
                   dir="ltr"
@@ -309,11 +303,30 @@ export default function PartyButton({ party }: { party: Party }) {
                     }
                   }}
                 />
-                <span className="text-center">
-                  {i(`spectrum.${getPosition(party.position).full}`)}
-                </span>
               </label>
             </div>
+            {party.socialPosition === undefined ? (
+              // New parties start with one position, which becomes the
+              // economic one once they get a social place too
+              <button
+                type="button"
+                onClick={() => update({ socialPosition: 0 })}
+                className="flex w-full items-center justify-center gap-1 rounded-full bg-zinc-200 py-1 text-sm transition-colors hover:bg-zinc-700 hover:text-white dark:bg-zinc-700 dark:hover:bg-zinc-200 dark:hover:text-zinc-950"
+              >
+                <PlusIcon className="size-4 shrink-0" />
+                {i("controls.addSocialAxis")}
+              </button>
+            ) : (
+              <AxisSlider
+                name="socialPosition"
+                title={i("controls.socialAxis")}
+                value={party.socialPosition}
+                label={i(
+                  `socialSpectrum.${getSocialPosition(party.socialPosition)}`,
+                )}
+                onChange={(socialPosition) => update({ socialPosition })}
+              />
+            )}
             <div className="flex w-full flex-col items-start gap-1 rounded-xl border border-zinc-200 px-2 py-1 dark:border-zinc-700">
               <div>
                 <label className="flex items-center gap-1">
@@ -440,6 +453,44 @@ export default function PartyButton({ party }: { party: Party }) {
           )}
         </div>
       )}
+    </div>
+  );
+}
+
+// A slider like the position one, for the social axis
+function AxisSlider({
+  name,
+  title,
+  value,
+  label,
+  onChange,
+}: {
+  name: string;
+  title: string;
+  value: number;
+  // The name of the current place, e.g. "Licht Rechts"
+  label: string;
+  onChange: (value: number) => void;
+}) {
+  return (
+    <div className="flex w-full">
+      <label className="flex w-full flex-col items-center gap-1">
+        <span className="self-start text-xs">
+          <span className="opacity-75">{title}: </span>
+          <span className="font-semibold">{label}</span>
+        </span>
+        <input
+          name={name}
+          dir="ltr"
+          step={25}
+          className="w-full appearance-none rounded-full bg-zinc-200 accent-zinc-500 dark:bg-zinc-700 dark:accent-zinc-300"
+          type="range"
+          min="-100"
+          max="100"
+          value={value}
+          onChange={(e) => onChange(parseInt(e.target.value))}
+        />
+      </label>
     </div>
   );
 }

@@ -48,17 +48,6 @@
     "threeQuarters": "Three-quarters majority",
     "customAmount": "Custom Majority"
   },
-  "allocation": {
-    "title": "Seats from votes",
-    "votes": "Votes or %",
-    "totalSeats": "Total seats",
-    "method": "Method",
-    "hint": "Enter each party's votes or vote share, then calculate the seats.",
-    "calculate": "Calculate seats",
-    "dHondt": "D'Hondt",
-    "sainteLague": "Sainte-Laguë",
-    "largestRemainder": "Largest remainder"
-  },
   "controls": {
     "politicalSpectrum": "Political Spectrum",
     "selectAll": "Select All",
@@ -68,7 +57,11 @@
     "apply": "Apply",
     "party": "party",
     "parties": "parties",
-    "spectrumHandle": "Edge of the range"
+    "spectrumHandle": "Edge of the range",
+    "economicAxis": "Economic",
+    "socialAxis": "Social",
+    "spectrumAxis": "Spectrum",
+    "addSocialAxis": "Economic + Social"
   },
   "buttons": {
     "dataManagement": "Data Management",
@@ -165,5 +158,27 @@
   "support": {
     "label": "Supports cabinet",
     "toggle": "Toggle cabinet support from {party}"
+  },
+  "socialSpectrum": {
+    "veryProgressive": "Very progressive",
+    "progressive": "Progressive",
+    "centreProgressive": "Centre-progressive",
+    "leanProgressive": "Lean progressive",
+    "centre": "Centre",
+    "leanConservative": "Lean conservative",
+    "centreConservative": "Centre-conservative",
+    "conservative": "Conservative",
+    "veryConservative": "Very conservative"
+  },
+  "economicSpectrum": {
+    "farLeft": "Very left",
+    "leftWing": "Left-wing",
+    "centreLeft": "Centre-left",
+    "leanLeft": "Lean left",
+    "centre": "Centre",
+    "leanRight": "Lean right",
+    "centreRight": "Centre-right",
+    "rightWing": "Right-wing",
+    "farRight": "Very right"
   }
 }

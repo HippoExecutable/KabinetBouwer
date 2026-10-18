@@ -19,7 +19,14 @@
 */
 
 import { expect, test } from "vitest";
-import { getPosition } from "@/utils/getPosition";
+import {
+  getPosition,
+  getSocialPosition,
+  spectrumStops,
+} from "@/utils/getPosition";
+import { polls } from "@/data/polls";
+import { currentRooms } from "@/data/currentRooms";
+import { pastElections } from "@/data/pastElections";
 
 test("gets the position for a given political spectrum number", () => {
   expect(getPosition(-100)).toEqual({ full: "farLeft", short: "LL" });
@@ -36,4 +43,21 @@ test("gets the position for a number within the range but not available in the p
 test("gets the position for a number outside the range", () => {
   expect(getPosition(150)).toEqual({ full: "farRight", short: "RR" });
   expect(getPosition(-150)).toEqual({ full: "farLeft", short: "LL" });
+});
+
+test("names places on the social axis like the economic one", () => {
+  expect(getSocialPosition(-100)).toBe("veryProgressive");
+  expect(getSocialPosition(-50)).toBe("centreProgressive");
+  expect(getSocialPosition(0)).toBe("centre");
+  expect(getSocialPosition(75)).toBe("conservative");
+  expect(getSocialPosition(100)).toBe("veryConservative");
+});
+
+test("gives every party in the presets both places", () => {
+  for (const preset of [...polls, ...currentRooms, ...pastElections]) {
+    for (const party of preset.parties) {
+      expect(spectrumStops, party.id).toContain(party.position);
+      expect(spectrumStops, party.id).toContain(party.socialPosition);
+    }
+  }
 });

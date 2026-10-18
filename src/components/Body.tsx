@@ -42,7 +42,6 @@ import {
   PresetListDropdown,
   PresetInfoEditor,
   PresetDescription,
-  SeatAllocationEditor,
   PartyInfoDialog,
   JsonShareExportButton,
   JsonShareImportButton,
@@ -89,12 +88,7 @@ const Seats = () => {
         <SortButton />
         <SwitchViewModeButton />
       </div>
-      {isEditMode && (
-        <>
-          <PresetInfoEditor />
-          <SeatAllocationEditor />
-        </>
-      )}
+      {isEditMode && <PresetInfoEditor />}
       <>
         <ul
           className={`xs:grid-cols-2 grid grid-cols-1 gap-4 transition-all sm:grid-cols-3 sm:gap-4 xl:grid-cols-4`}

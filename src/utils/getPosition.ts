@@ -21,6 +21,23 @@
 // The positions a party can have, from far left to far right
 export const spectrumStops = [-100, -75, -50, -25, 0, 25, 50, 75, 100];
 
+// The social axis has the same steps as the economic one
+const socialNames: Record<string, string> = {
+  farLeft: "veryProgressive",
+  leftWing: "progressive",
+  centreLeft: "centreProgressive",
+  leanLeft: "leanProgressive",
+  centre: "centre",
+  leanRight: "leanConservative",
+  centreRight: "centreConservative",
+  rightWing: "conservative",
+  farRight: "veryConservative",
+};
+
+// The name of a place on the social axis, from progressive to conservative
+export const getSocialPosition = (position: number): string =>
+  socialNames[getPosition(position).full];
+
 export const getPosition = (
   position: number,
 ): { full: string; short: string } => {

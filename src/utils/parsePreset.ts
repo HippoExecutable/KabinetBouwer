@@ -37,10 +37,9 @@ function isParties(data: unknown): data is Party[] {
         typeof item.position === "number" &&
         (typeof item.isIndependent === "boolean" ||
           item.isIndependent === undefined) &&
-        (typeof item.votes === "number" || item.votes === undefined) &&
-        (typeof item.isThresholdExempt === "boolean" ||
-          item.isThresholdExempt === undefined) &&
-        (typeof item.isSupport === "boolean" || item.isSupport === undefined),
+        (typeof item.isSupport === "boolean" || item.isSupport === undefined) &&
+        (typeof item.socialPosition === "number" ||
+          item.socialPosition === undefined),
     )
   );
 }

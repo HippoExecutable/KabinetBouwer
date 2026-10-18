@@ -19,7 +19,12 @@
 */
 
 import { useI18n, useParties, useSelectedParties } from "@/lib/zustandStore";
-import { getPosition, spectrumStops } from "@/utils/getPosition";
+import { Party } from "@/types";
+import {
+  getPosition,
+  getSocialPosition,
+  spectrumStops,
+} from "@/utils/getPosition";
 import { pluralize } from "@/utils/pluralize";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
@@ -32,27 +37,31 @@ const percent = (index: number) => (index / last) * 100;
 const handleClass =
   "pointer-events-none absolute -inset-x-3 top-0 h-full w-[calc(100%+1.5rem)] appearance-none bg-transparent focus-visible:outline-hidden [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:size-6 [&::-moz-range-thumb]:cursor-grab [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-4 [&::-moz-range-thumb]:border-zinc-700 [&::-moz-range-thumb]:bg-white dark:[&::-moz-range-thumb]:border-zinc-200 dark:[&::-moz-range-thumb]:bg-zinc-900 [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:size-6 [&::-webkit-slider-thumb]:cursor-grab [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-4 [&::-webkit-slider-thumb]:border-zinc-700 [&::-webkit-slider-thumb]:bg-white focus-visible:[&::-webkit-slider-thumb]:ring-4 focus-visible:[&::-webkit-slider-thumb]:ring-zinc-400 dark:[&::-webkit-slider-thumb]:border-zinc-200 dark:[&::-webkit-slider-thumb]:bg-zinc-900";
 
-// Pick a part of the political spectrum, then select the parties in it
-export default function SpectrumRange() {
-  const { parties } = useParties();
-  const { setSelectedParties } = useSelectedParties();
+// Indexes into `spectrumStops` of the two handles. Either handle can pass the
+// other, so that two handles on the same dot can still be dragged both ways.
+type Handles = [number, number];
+
+const toRange = ([first, second]: Handles) => [
+  spectrumStops[Math.min(first, second)],
+  spectrumStops[Math.max(first, second)],
+];
+
+function SpectrumSlider({
+  title,
+  handles,
+  setHandles,
+  label,
+}: {
+  title: string;
+  handles: Handles;
+  setHandles: (by: Handles) => void;
+  // The name of a position, e.g. "Centrum-Links"
+  label: (index: number) => string;
+}) {
   const { i } = useI18n();
-  // Indexes into `spectrumStops` of the two handles, the whole spectrum to
-  // start with. Either handle can pass the other, so that two handles on the
-  // same dot can still be dragged both ways.
-  const [handles, setHandles] = useState<[number, number]>([0, last]);
   const [first, second] = handles;
   const from = Math.min(first, second);
   const to = Math.max(first, second);
-
-  const label = (index: number) =>
-    i(`spectrum.${getPosition(spectrumStops[index]).full}`);
-  const inRange = parties.filter(
-    (party) =>
-      party.position >= spectrumStops[from] &&
-      party.position <= spectrumStops[to],
-  );
-  const seats = inRange.reduce((acc, party) => acc + party.seats, 0);
 
   // A click on a dot moves the closest handle there
   function pick(index: number) {
@@ -63,7 +72,14 @@ export default function SpectrumRange() {
   }
 
   return (
-    <div className="mt-1 rounded-2xl bg-zinc-200 p-4 dark:bg-zinc-700">
+    <div>
+      <p className="mb-1 text-xs font-semibold opacity-75">
+        {title}
+        <span className="font-normal">
+          {": "}
+          {from === to ? label(from) : `${label(from)} – ${label(to)}`}
+        </span>
+      </p>
       <div className="relative mx-3 h-8">
         <div className="absolute top-1/2 h-1.5 w-full -translate-y-1/2 rounded-full bg-white dark:bg-zinc-900"></div>
         <div
@@ -92,28 +108,26 @@ export default function SpectrumRange() {
             ></button>
           );
         })}
-        <input
-          type="range"
-          min={0}
-          max={last}
-          step={1}
-          value={first}
-          onChange={(e) => setHandles([Number(e.target.value), second])}
-          className={handleClass}
-          aria-label={i("controls.spectrumHandle")}
-          aria-valuetext={label(first)}
-        />
-        <input
-          type="range"
-          min={0}
-          max={last}
-          step={1}
-          value={second}
-          onChange={(e) => setHandles([first, Number(e.target.value)])}
-          className={handleClass}
-          aria-label={i("controls.spectrumHandle")}
-          aria-valuetext={label(second)}
-        />
+        {handles.map((value, handle) => (
+          <input
+            key={handle}
+            type="range"
+            min={0}
+            max={last}
+            step={1}
+            value={value}
+            onChange={(e) =>
+              setHandles(
+                handle === 0
+                  ? [Number(e.target.value), second]
+                  : [first, Number(e.target.value)],
+              )
+            }
+            className={handleClass}
+            aria-label={`${title}: ${i("controls.spectrumHandle")}`}
+            aria-valuetext={label(value)}
+          />
+        ))}
       </div>
 
       {/* The labels under the dots, where there is room for them */}
@@ -134,26 +148,74 @@ export default function SpectrumRange() {
         <span>{label(0)}</span>
         <span>{label(last)}</span>
       </div>
+    </div>
+  );
+}
 
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-        <p className="text-sm">
-          <span className="font-semibold">
-            {from === to ? label(from) : `${label(from)} – ${label(to)}`}
-          </span>
-          <span className="opacity-75">
-            {" · "}
-            {pluralize(
-              inRange.length,
-              i("controls.party"),
-              i("controls.parties"),
-            )}
-            {", "}
-            {pluralize(
-              seats,
-              i("header.seat").toLowerCase(),
-              i("header.seats").toLowerCase(),
-            )}
-          </span>
+// Pick a part of the political spectrum, then select the parties in it. The
+// social axis only shows when the parties have a place on it.
+export default function SpectrumRange() {
+  const { parties } = useParties();
+  const { setSelectedParties } = useSelectedParties();
+  const { i } = useI18n();
+  const [economic, setEconomic] = useState<Handles>([0, last]);
+  const [social, setSocial] = useState<Handles>([0, last]);
+  const hasSocial = parties.some((party) => party.socialPosition !== undefined);
+
+  const [economicFrom, economicTo] = toRange(economic);
+  const [socialFrom, socialTo] = toRange(social);
+  // Parties without a social place, like ones added by hand, only drop out
+  // once the social range is narrowed
+  const isWholeSocial = socialFrom === spectrumStops[0] && socialTo === 100;
+  const isInRange = (party: Party) =>
+    party.position >= economicFrom &&
+    party.position <= economicTo &&
+    (!hasSocial ||
+      isWholeSocial ||
+      (party.socialPosition !== undefined &&
+        party.socialPosition >= socialFrom &&
+        party.socialPosition <= socialTo));
+  const inRange = parties.filter(isInRange);
+  const seats = inRange.reduce((acc, party) => acc + party.seats, 0);
+
+  return (
+    <div className="mt-1 flex flex-col gap-4 rounded-2xl bg-zinc-200 p-4 dark:bg-zinc-700">
+      <SpectrumSlider
+        title={i(hasSocial ? "controls.economicAxis" : "controls.spectrumAxis")}
+        handles={economic}
+        setHandles={setEconomic}
+        label={(index) =>
+          i(
+            `${hasSocial ? "economicSpectrum" : "spectrum"}.${
+              getPosition(spectrumStops[index]).full
+            }`,
+          )
+        }
+      />
+      {hasSocial && (
+        <SpectrumSlider
+          title={i("controls.socialAxis")}
+          handles={social}
+          setHandles={setSocial}
+          label={(index) =>
+            i(`socialSpectrum.${getSocialPosition(spectrumStops[index])}`)
+          }
+        />
+      )}
+
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <p className="text-sm opacity-75">
+          {pluralize(
+            inRange.length,
+            i("controls.party"),
+            i("controls.parties"),
+          )}
+          {", "}
+          {pluralize(
+            seats,
+            i("header.seat").toLowerCase(),
+            i("header.seats").toLowerCase(),
+          )}
         </p>
         <button
           type="button"
