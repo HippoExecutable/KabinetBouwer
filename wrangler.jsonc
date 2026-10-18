@@ -1,0 +1,13 @@
+// Cloudflare Workers deploy settings for 150zetels.nl. The site is static:
+// `npm run build` writes it to dist/, which is uploaded as-is. Without this
+// file, `wrangler deploy` tries to set the project up itself by installing
+// packages, which failed on Cloudflare's build machines.
+{
+  "name": "150zetels",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    // The app has one page, so unknown paths load index.html
+    "not_found_handling": "single-page-application",
+  },
+}
