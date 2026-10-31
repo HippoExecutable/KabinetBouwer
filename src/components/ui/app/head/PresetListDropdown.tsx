@@ -32,6 +32,7 @@ import { pastElections } from "@/data/pastElections";
 import { allPresets } from "@/data/allPresets";
 import CollapsibleSection from "./CollapsibleSection";
 import PresetSubtitle from "./PresetSubtitle";
+import MostRecentTag from "./MostRecentTag";
 import { useEffect, useRef, useState } from "react";
 import { Preset } from "@/types";
 import { AnimatePresence, motion } from "motion/react";
@@ -214,6 +215,7 @@ export default function PresetListDropdown() {
                             <div className="flex gap-1">
                               <span>{preset.name}</span>
                               <span>{preset.emoji}</span>
+                              <MostRecentTag preset={preset} />
                             </div>
                             {/* {selectedPreset === preset && ( */}
                             <PresetSubtitle

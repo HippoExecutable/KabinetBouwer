@@ -38,7 +38,8 @@
     "electionDate": "Election date",
     "coalition": "Coalition",
     "changeFromNow": "Change from the current House",
-    "electionSeats": "{year} House election"
+    "electionSeats": "{year} House election",
+    "mostRecent": "Most recent"
   },
   "majority": {
     "blockingMinority": "Blocking minority",

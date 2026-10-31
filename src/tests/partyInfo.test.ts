@@ -89,7 +89,11 @@ test("finds current seats in the rooms and the Ipsos poll", () => {
   expect(seats.eersteKamer).toBe(7);
   expect(seats.europeesParlement).toBe(3);
   expect(seats.poll).toBeGreaterThan(0);
-  expect(getCurrentSeats("pvv", "Maurice de Hond").poll).toBe(18);
+  // Picks the chosen poll, whatever its latest numbers are
+  const deHond = polls.find((poll) => poll.name === "Maurice de Hond")!;
+  expect(getCurrentSeats("pvv", "Maurice de Hond").poll).toBe(
+    deHond.parties.find((party) => party.shortName === "PVV")!.seats,
+  );
   expect(getCurrentSeats("kvp").tweedeKamer).toBe(0);
 });
 

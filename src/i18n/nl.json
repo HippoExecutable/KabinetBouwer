@@ -38,7 +38,8 @@
     "electionDate": "Verkiezingsdatum",
     "coalition": "Coalitie",
     "changeFromNow": "Verschil met de huidige Tweede Kamer",
-    "electionSeats": "TK-verkiezingen {year}"
+    "electionSeats": "TK-verkiezingen {year}",
+    "mostRecent": "Meest recent"
   },
   "majority": {
     "blockingMinority": "Blokkerende Minderheid",

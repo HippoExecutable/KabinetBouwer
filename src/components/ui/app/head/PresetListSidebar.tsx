@@ -33,6 +33,7 @@ import {
 import { Preset } from "@/types";
 import CollapsibleSection from "./CollapsibleSection";
 import PresetSubtitle from "./PresetSubtitle";
+import MostRecentTag from "./MostRecentTag";
 
 export default function PresetListSidebar() {
   const { i } = useI18n();
@@ -69,6 +70,7 @@ export default function PresetListSidebar() {
           <div className="line-clamp-1 flex gap-1">
             <span>{preset.name}</span>
             <span>{preset.emoji}</span>
+            <MostRecentTag preset={preset} />
           </div>
           <PresetSubtitle preset={preset} dateLabelKey={dateLabelKey} />
         </button>
